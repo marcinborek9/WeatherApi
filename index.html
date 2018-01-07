@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>WeatherApi | Marcin Borek</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="search">
+    <label> Look at weather in any city/country:
+      <input id="address" class="search-input" type="textbox" placeholder="any city or country">
+    </label>
+  </div>
+  <input id="submit" class="search-button" type="button" value="Search">
+  <input id="showDays" class="show-days-button" type="button" value="Show more days">
+  <div class="results">
+    <div class="search-results">
+      <div id="search-results__location-info" class="search-results__location">
+      </div>
+      <div id="search-results__current-first" class="search-results__current">
+      </div>
+      <div id="search-results__current-second" class="search-results__current">
+      </div>
+    </div>
+    <div class="more-results" id="allDaysResults">
+      <div id="search-results__forecast" class="search-results__forecast-info"></div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="map"></div>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXdnBlI6ipSNHDYz6dq0OzpasMoJkDic&callback=initMap">
+</script>
+<script src="script.js"></script>
+</body>
+</html>

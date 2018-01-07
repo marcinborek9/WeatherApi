@@ -1,0 +1,84 @@
+#map {
+  height: 60vh;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  background-color: #363636;
+  color: #faeeeb;
+  min-height: 40vh;
+  text-align: center;
+}
+
+.search {
+  padding: 20px 0;
+}
+
+.search-input {
+  margin: 20px 0 0 10px;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  border: 2px solid #faeeeb;
+}
+ 
+.search-button {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 2px solid #faeeeb;
+  background-color: #363636;
+  color: #faeeeb;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.search-button:hover {
+  border: 2px solid #f8cabf;
+  color: #f8cabf;
+}
+
+.search-results {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.show-days-button {
+  display: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 2px solid #faeeeb;
+  background-color: #363636;
+  color: #faeeeb;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.show-days-button:hover {
+  border: 2px solid #f8cabf;
+  color: #f8cabf;
+}
+
+.search-results__forecast-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.search-results__forecast-allDays {
+  padding: 40px;
+}
