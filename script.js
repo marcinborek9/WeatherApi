@@ -1,10 +1,6 @@
 function get_response(search_string){
 	let http = new XMLHttpRequest();
-<<<<<<< HEAD
 	let request = "https://api.apixu.com/v1/forecast.json?key=4b5f72202fe346238ae191957180501&q=" + encodeURIComponent(search_string) + "&days=7";
-=======
-	let request = "https://api.apixu.com/v1/current.json?key=4b5f72202fe346238ae191957180501&q=" + encodeURIComponent(search_string);
->>>>>>> e3deec325c81103f51c27b47cb8e96586c473954
 	http.open("GET", request, false);
 	http.send();
   return JSON.parse(http.response);
